@@ -26,6 +26,7 @@
     "yum::epel",
     "yum::remi",
     "php",
+    "monit",
     "mysql",
     "mysql::server",
     "nginx",
