@@ -1,0 +1,9 @@
+server {
+  listen 80 default;
+  server_name <%= @server_name %>;
+
+  location / {
+    root "/var/www/<%= @server_name %>";
+    index index.html index.html;
+  }
+}
