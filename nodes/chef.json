@@ -4,6 +4,8 @@
   },
   "run_list": [
     "yum",
+    "yum::epel",
+    "php",
     "nginx",
     "iptables"
   ]
