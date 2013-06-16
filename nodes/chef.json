@@ -26,9 +26,12 @@
     "yum::epel",
     "yum::remi",
     "php",
+    "monit",
+    "memcached",
     "mysql",
     "mysql::server",
     "nginx",
-    "iptables"
+    "iptables",
+    "vim"
   ]
 }
