@@ -2,10 +2,32 @@
   "nginx": {
     "port": 80
   },
+  "php": {
+    "packages": [
+      "php-mysql",
+      "php-dom",
+      "php-xml",
+      "php-mbstring",
+      "php-devel",
+      "php-pdo",
+      "php-pecl-apc",
+      "php-fpm",
+      "php-pecl-memcache"
+    ],
+    "version": "5.4"
+  },
+  "mysql": {
+    "server_root_password": "vagrant",
+    "server_repl_password": "vagrant",
+    "server_debian_password": "vagrant"
+  },
   "run_list": [
     "yum",
     "yum::epel",
+    "yum::remi",
     "php",
+    "mysql",
+    "mysql::server",
     "nginx",
     "iptables"
   ]
