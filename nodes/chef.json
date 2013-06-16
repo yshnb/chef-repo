@@ -22,11 +22,9 @@
     "server_debian_password": "vagrant"
   },
   "run_list": [
-    "yum",
     "yum::epel",
     "yum::remi",
     "php",
-    "monit",
     "mysql",
     "mysql::server",
     "nginx",
