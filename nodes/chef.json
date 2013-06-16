@@ -25,6 +25,7 @@
     "yum::epel",
     "yum::remi",
     "php",
+    "php-fpm",
     "monit",
     "memcached",
     "mysql",
